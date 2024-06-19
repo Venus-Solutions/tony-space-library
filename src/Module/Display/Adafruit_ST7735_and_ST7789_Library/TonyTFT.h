@@ -1,7 +1,7 @@
 #ifndef _TonyTFTH_
 #define _TonyTFTH_
 
-#include "TonyTFT.h"
+#include "Adafruit_ST77xx.h"
 
 #define TFT_240_240		0 
 #define TFT_240_320		1
@@ -9,7 +9,7 @@
 
 
 /// Subclass of ST77XX type display for ST7789 TFT Driver
-class TonyTFT : public TonyTFT {
+class TonyTFT : public Adafruit_ST77xx {
   public:
     TonyTFT(int8_t cs, int8_t dc, int8_t mosi, int8_t sclk,
       int8_t rst = -1);
